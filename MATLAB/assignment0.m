@@ -2,7 +2,7 @@
 num1= [1 6 -2];
 den1= [1 7 8];
 sys1=tf(num1, den1);
-%pzmap(sys1)
+pzmap(sys1)
 p=pole(sys1);
 S=isstable(sys1);
 disp(S)
@@ -15,7 +15,7 @@ a2= [1 6];
 b2=[1 -9];
 den2=conv(a2, b2);
 sys2=tf(num2, den2);
-%pzmap(sys2)
+pzmap(sys2)
 p1=pole(sys2);
 S1=isstable(sys2);
 disp(S1)
