@@ -29,7 +29,7 @@ b4=[1 11];
 %c4=[1 0]; %to check type 1 function
 %den3=conv(conv(a4, b4),c4); % convolution of checking type 1 function
 den3=conv(a4, b4);
-%sys3=tf(num3,den3); % checking transfer function for type 1
+sys3=tf(num3,den3); % checking transfer function for type 1
 p2=pole(sys3);
 
 type=input('enter the type');
